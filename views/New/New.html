@@ -1,0 +1,36 @@
+<div data-role="view" id="new" data-title="New Quiz" data-model="app.New.model" data-init="app.New.events.dataInit" data-show="app.New.events.dataShow">
+    
+<div class="header">  
+    <div data-role="navbar">
+        <span data-role="view-title"></span>
+    </div>
+</div> 
+
+<form>
+            <ul data-role="listview" data-style="inset">
+                <li class="quizId">
+                    <label>
+                        Quiz Id:
+                    <input type="text" name="username" data-bind="value: quizId" required />
+                    </label>
+                </li>                
+            </ul>
+
+        <div class="rounded colored" data-bind="click:getQuiz">Get New Quiz</div>
+
+        </form>
+
+
+<footer data-role="footer">
+            <div data-role="tabstrip">                
+                <a href="#new"><div class="icon home"></div></a>
+                <a href=""><div class="icon message"></div></a> 
+                <a href=""><div class="icon users"></div></a>
+                <a href="#scores"><div class="icon trophy"></div></a>
+                <a href=""><div class="icon menu"></div></a>
+            </div>
+</footer>
+   
+
+</div>
+

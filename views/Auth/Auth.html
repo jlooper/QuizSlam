@@ -1,0 +1,120 @@
+<div data-role="view" class="login welcome-scrn" id="login" data-title="Welcome!" data-model="app.Auth.model" data-show="app.Auth.events.afterShow">
+
+<div class="header">
+    <div data-role="navbar">
+        <a class="top" href="#new" data-align="left" data-role="button">Home</a>
+        <span data-role="view-title"></span>
+    </div>
+</div>
+    
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li class="username">
+                    <label>
+                        Username:
+                    <input type="text" name="username" data-bind="value: username" required  />
+                    </label>
+                </li>
+                <li class="password">
+                    <label>
+                        Password:
+                        <input type="password" name="password" data-bind="value: password" required />
+                    </label>
+                </li>
+            </ul>
+
+        <ol class="group-wrp">
+                <li>
+                    <button class="btn colored" style="width: 100%" data-role="button" data-bind="click: login">Login</button>
+                </li>                
+                <li class="signup">
+                    <a data-role="button" href="#register" class="btn-signup">Don't have an account?</a>
+                </li>
+
+                <li class="signup">
+                    <a data-role="button" href="#password" class="btn-signup">Forgot password?</a>
+                </li>
+
+
+
+
+        </ol>
+
+                          
+
+        </form>
+
+        
+
+      
+
+</div>
+
+
+
+<div data-role="view" id="register" data-title="Register" data-model="app.Auth.model" class="login">
+    <div data-role="navbar">
+        <a class="top" href="#login" data-align="left" data-role="button">Back</a>
+        <span data-role="view-title"></span>
+    </div>
+    <form>
+        <ul data-role="listview" data-style="inset">
+            <li>
+                <label>
+                    Email:
+                    <input type="email" name="email" data-bind="value: email" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Username:
+                    <input type="text" name="username" data-bind="value: username" required>
+                </label>
+            </li>                
+            <li>
+                <label>
+                    Password:
+                    <input type="password" name="password" data-bind="value: password" required>
+                </label>
+            </li>
+
+            
+            
+        </ul>
+
+        <ol class="group-wrp">
+            <li>
+                <button class="btn colored" style="width: 100%" data-role="button" data-bind="click: register">Register</button> 
+            </li>
+        </ol>
+
+    </form>
+</div>
+
+<div data-role="view" id="password" data-title="Reset Password" data-model="app.Auth.model" class="login">
+    <div data-role="navbar">
+        <a class="top" href="#login" data-align="left" data-role="button">Back</a>
+        <span data-role="view-title"></span>
+    </div>
+    <form>
+        <ul data-role="listview" data-style="inset">
+            <li>
+                <label>
+                    Email:
+                    <input type="email" name="email" data-bind="value: email" required>
+                </label>
+            </li>
+            
+        </ul>
+
+        <ol class="group-wrp">
+            <li>
+                <button class="btn colored" style="width: 100%" data-role="button" data-bind="click: resetPassword">Reset</button> 
+            </li>
+        </ol>
+
+    </form>
+</div>
+
+
+

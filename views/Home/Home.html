@@ -1,0 +1,45 @@
+<div data-role="view" id="home" data-title="QuizSlam" data-model="app.Home.model" data-init="app.Home.events.dataInit" data-show="app.Home.events.dataShow">
+    
+<div class="header">   
+    <div data-role="navbar">
+        <span data-role="view-title"></span>
+    </div>
+</div>   
+       
+
+        
+       <div id="card" class="rounded">
+            <div id="question" data-bind="text:question"></div>        
+       </div>
+       
+       <div id="msg" class="hidden">Great job!</div>      
+             
+       
+       <span id="card0" class="rounded" data-bind="click:answerQuestion,text:answer1"></span>
+       <span id="card1" class="rounded" data-bind="click:answerQuestion,text:answer2"></span>
+       <span id="card2" class="rounded" data-bind="click:answerQuestion,text:answer3"></span>
+       <span id="card3" class="rounded" data-bind="click:answerQuestion,text:answer4"></span>
+
+       
+
+       <div id="continueBtn" class="halfBtnLeft rounded colored hidden" data-bind="click:spinAgain">Continue</div>
+
+       <div id="doneBtn" class="halfBtnRight rounded colored2 hidden" data-bind="click:sendScore">Done</div>
+        
+
+<!--<footer data-role="footer">
+            <div data-role="tabstrip">                
+                <a href="#new"><div class="icon home"></div></a>
+                <a href=""><div class="icon message"></div></a> 
+                <a href=""><div class="icon users"></div></a>
+                <a href="#scores"><div class="icon trophy"></div></a>
+                <a href=""><div class="icon menu"></div></a>
+            </div>
+</footer>
+-->
+
+
+
+
+</div>
+

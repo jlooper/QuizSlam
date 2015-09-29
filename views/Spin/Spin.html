@@ -1,0 +1,37 @@
+<div data-role="view" id="spin" data-title="QuizSlam" data-model="app.Spin.model" data-init="app.Spin.events.dataInit" data-show="app.Spin.events.dataShow">
+    
+<div class="header">  
+    <div data-role="navbar">
+        <span data-role="view-title"></span>
+    </div>
+</div>   
+       
+       
+    <p data-bind="text:spunNum" class="spunNum"></p>
+
+    <div class='colorWheel'></div> 
+
+    <div class="rounded colored halfBtnLeft" data-bind="click:spin">Spin!</div> 
+
+    <div class="rounded colored2 halfBtnRight" data-bind="click:new">New Quiz</div>    
+     
+       
+
+<footer data-role="footer">
+            <div data-role="tabstrip">                
+                <a href="#new"><div class="icon home"></div></a>
+                <a href=""><div class="icon message"></div></a> 
+                <a href=""><div class="icon users"></div></a>
+                <a href="#scores"><div class="icon trophy"></div></a>
+                <a href=""><div class="icon menu"></div></a>
+            </div>
+</footer>
+   
+   
+
+
+
+
+
+</div>
+

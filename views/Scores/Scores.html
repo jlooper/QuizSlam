@@ -1,0 +1,36 @@
+<div data-role="view" id="scores" data-title="My Scores" data-model="app.Scores.model" data-init="app.Scores.events.dataInit" data-show="app.Scores.events.dataShow">
+    
+<div class="header">   
+    <div data-role="navbar">
+        <span data-role="view-title"></span>
+    </div>
+</div> 
+
+    <ul id="score-list" data-style="inset" data-role="listview" data-template="score-template"></ul>
+        
+    <script id="score-template" type="text/x-kendo-template">    
+        <li>
+        <div style="padding:5px">
+        #: kendo.toString(new Date(CreatedAt),'g')#
+        # if (typeof(Score) !== 'undefined') { #
+        Score - #: Score #%
+        # } #
+        </div>       
+        </li>    
+    </script>
+
+<div id="continueBtn" class="rounded colored" data-bind="click:sendScores">Send My Scores!</div>
+
+<footer data-role="footer">
+            <div data-role="tabstrip">                
+                <a href="#new"><div class="icon home"></div></a>
+                <a href=""><div class="icon message"></div></a> 
+                <a href=""><div class="icon users"></div></a>
+                <a href="#scores"><div class="icon trophy"></div></a>
+                <a href=""><div class="icon menu"></div></a>
+            </div>
+</footer>
+   
+
+</div>
+
