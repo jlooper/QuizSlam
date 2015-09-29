@@ -115,7 +115,7 @@ define([
 
 var events = {
     dataInit: function (e) {
-       if(!model.checkSimulator){
+      if(!model.checkSimulator()){
         model.showBanner('top',window.plugins.AdMob.AD_SIZE.BANNER);
       }
     },
