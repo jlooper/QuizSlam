@@ -11,10 +11,10 @@ define([
 
   checkSimulator: function() {
       if (window.navigator.simulator === true) {
-          alert('This plugin is not available in the simulator.');
+          console.log('This plugin is not available in the simulator.');
           return true;
       } else if (window.plugins === undefined || window.plugins.AdMob === undefined) {
-          alert('Plugin not found. Maybe you are running in AppBuilder Companion app which currently does not support this plugin.');
+          console.log('Plugin not found. Maybe you are running in AppBuilder Companion app which currently does not support this plugin.');
           return true;
       } else {
           return false;
